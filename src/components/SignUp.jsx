@@ -16,7 +16,7 @@ class SignUp extends Component {
   Signup_func () {
     console.log(this.state.email, this.state.password);
     firebaseApp.auth().createUserWithEmailAndPassword(this.state.email, this.state.password).catch(error => {
-        console.log('error', error);
+        console.log('error for signup', error);
       this.setState(error);
     })
     // catch(error =>  {
