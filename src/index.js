@@ -9,7 +9,7 @@ import "./App.css";
 
 firebaseApp.auth().onAuthStateChanged(user => {
   if (user) {
-    console.log("user signed in", user);
+    console.log("user signed in to the app", user);
   } else {
     console.log("user signedout from the app");
   }
